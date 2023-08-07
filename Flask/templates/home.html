@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Natural Disaster classification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1682465b-985f-417f-a10c-4de8f27bba7f/d656th1-1cbc5afd-c9cd-4dd4-a9ab-3eb24791e399.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE2ODI0NjViLTk4NWYtNDE3Zi1hMTBjLTRkZThmMjdiYmE3ZlwvZDY1NnRoMS0xY2JjNWFmZC1jOWNkLTRkZDQtYTlhYi0zZWIyNDc5MWUzOTkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.evdqSTMX3lZNPSwC42YgAcnfyWovbwfj1LHUAm-cvII');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* 50% transparent background color */
+            color: white;
+            font-family: 'poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 130vh;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 20px 23px;
+        }
+
+        .left {
+            position: absolute;
+            top: 13.5px;
+            left: 25px;
+            font-size: 1.5rem;
+            margin-left: 20px
+        }
+
+        main {
+            margin-top: 30vh;
+            /* Add a 30% space between header/nav and cards */
+
+        }
+
+        main p {
+            line-height: 1.6;
+        }
+
+        .card {
+            width: 20%;
+            display: inline-block;
+            box-shadow: 2px 2px 20px black;
+            border-radius: 5px;
+            margin: 2%;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .title {
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .des {
+            padding: 3px;
+            text-align: center;
+            padding-top: 10px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        button {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        #myHeading {
+            text-align: center !important;
+        }
+
+        /* Add the new CSS for centering the earthquake card */
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">Natural Disaster intensity analysis classification using A.I</div>
+        <nav>
+            <ul>
+                <li><a class="active" href="/home">Home</a></li>
+                <li><a href="/intro">Introduction</a></li>
+                <li><a href="/upload">Open Web Cam</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <!--cards -->
+        <div class="card">
+            <div class="card-container">
+                <div class="image"
+                    style="background-image: url('https://i.natgeofe.com/n/ea3d92b5-0e46-47c5-ab35-bab7d616ec4f/01nepalday2.jpg');">
+                </div>
+                <div class="title">
+                    <h1>Earthquake</h1>
+                </div>
+                <div class="des">
+                    <p>An earthquake is a sudden shaking of the ground caused by the release of energy stored in Earth’s
+                        crust. These seismic waves are produced when masses of rock straining against one another
+                        suddenly fracture and “slip”. Earthquakes can range in intensity and occur most often along
+                        geologic faults, narrow zones where rock masses move in relation to one another. The major fault
+                        lines of the world are located at the fringes of the huge tectonic plates that make up Earth’s
+                        crust.</p>
+                </div>
+            </div>
+        </div>
+        <!--cards -->
+
+        <div class="card">
+            <div class="card-container">
+                <div class="image"
+                    style="background-image: url('https://c1.wallpaperflare.com/preview/0/88/60/cyclone-catarina-hurricane-tropical-cyclone.jpg');">
+                </div>
+                <div class="title">
+                    <h1>Cyclone</h1>
+                </div>
+                <div class="des">
+                    <p>A cyclone is a large air mass that rotates around a strong center of low atmospheric pressure. In
+                        the Northern Hemisphere, it rotates counterclockwise, while in the Southern Hemisphere, it
+                        rotates clockwise. Cyclones are characterized by inward-spiraling winds that rotate about a zone
+                        of low pressure. The largest low-pressure systems are polar vortices and extratropical cyclones
+                        of the largest scale. Warm-core cyclones such as tropical cyclones and subtropical cyclones also
+                        lie within the synoptic scale. Cyclones can transition between extratropical, subtropical, and
+                        tropical phases.</p>
+                </div>
+            </div>
+        </div>
+        <!--cards -->
+
+        <div class="card">
+            <div class="card-container">
+                <div class="image"
+                    style="background-image: url('https://assets.telegraphindia.com/telegraph/2020/Sep/1598988182_2020_8img30_aug_2020_pti30-08-2020_000173b.jpg');">
+                </div>
+                <div class="title">
+                    <h1>Floods</h1>
+                </div>
+                <div class="des">
+                    <p>A flood is an overflow of water that submerges land that is usually dry. Floods can occur due to
+                        an overflow of water from water bodies, such as a river, lake, or ocean, or due to an
+                        accumulation of rainwater on saturated ground. Floods can cause damage to homes and businesses
+                        if they are in the natural flood plains of rivers. Human changes to the environment often
+                        increase the intensity and frequency of flooding, for example land use changes such as
+                        deforestation and removal of wetlands, changes in waterway course or flood controls such as with
+                        levees, and larger environmental issues such as climate change and sea level rise.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-container">
+                <div class="image"
+                    style="background-image: url('https://media.wired.com/photos/611c1f573ba24d114a71681e/master/pass/Science_fire_GettyImages-539612713.gif');">
+                </div>
+                <div class="title">
+                    <h1>WildFire</h1>
+                </div>
+                <div class="des">
+                    <p>A wildfire is an unplanned, uncontrolled, and unpredictable fire in an area of combustible
+                        vegetation. Wildfires can occur in forests, grasslands, brushlands, or lands sown to crops. The
+                        terms forest fire, brush fire, etc., may be used to describe specific types of wildfires; their
+                        usage varies according to the characteristics of the fire and the region in which it occurs.
+                        Wildfires can have both beneficial and detrimental effects on the environment. Some natural
+                        forest ecosystems depend on wildfire, while human societies can be severely impacted by fires.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--cards -->
+    </div>
+
+</body>
+
+</html>

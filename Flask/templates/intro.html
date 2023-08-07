@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Natural Disaster classification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1682465b-985f-417f-a10c-4de8f27bba7f/d656th1-1cbc5afd-c9cd-4dd4-a9ab-3eb24791e399.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE2ODI0NjViLTk4NWYtNDE3Zi1hMTBjLTRkZThmMjdiYmE3ZlwvZDY1NnRoMS0xY2JjNWFmZC1jOWNkLTRkZDQtYTlhYi0zZWIyNDc5MWUzOTkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.evdqSTMX3lZNPSwC42YgAcnfyWovbwfj1LHUAm-cvII');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.5); /* 50% transparent background color */
+            color: white;
+            font-family: 'poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 20px 23px;
+        }
+
+        .left {
+          position:absolute;
+          top:13.5px;
+          left:25px;
+          font-size:1.5rem;
+          margin-left:20px
+        }
+
+        main {
+            width: 80%;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* 50% transparent background color */
+        }
+
+        main p {
+            line-height: 1.6;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+      <div class="left">Natural Disaster intensity analysis classification using A.I</div>
+        <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a class="active" href="/intro">Introduction</a></li>
+                    <li><a href="/upload">Open Web Cam</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>China, India, and the United States are among the countries of the world most affected by natural disasters.
+            Natural disasters have the potential to wreck and even end the lives of those people who stand in their way.
+            However, whether or not you are likely to be affected by a natural disaster greatly depends on where in
+            the world you live. The objective of the project is to build a web application to detect the type of
+            disaster. The input is taken from the in-built webcam, which in turn is given to the pre-trained model.
+            The model predicts the type of disaster and displays it on the UI.</p>
+    </main>
+</body>
+
+</html>
