@@ -3,11 +3,10 @@
 </div>
 <br />
 <div align="center">
-	<a href="https://www.gnu.org/gnu/linux-and-gnu.en.html"><img src="https://img.shields.io/badge/OS-GNU/Linux-FCC624?style=flat&logo=linux" /></a>
-	<a href="https://www.raspberrypi.com"><img src="https://img.shields.io/badge/DISTRO-RaspianOS-A22846?style=flat&logo=raspberrypi" /></a>
-	<a href="https://www.gnu.org/software/bash/"><img src="https://img.shields.io/badge/LANG-Bash-4EAA25?style=flat&logo=gnubash" /></a>
-        <a href="https://www.gnu.org/software/bash/"><img src="https://img.shields.io/badge/Architecture-armhf-0091BD?style=flat&logo=arm" /></a>
-        <a href="https://www.gnu.org/software/bash/"><img src="https://img.shields.io/badge/Version-1.0-CD040B?style=flat&logo=verizon" /></a>
+	<a href="https://www.microsoft.com/en-us/windows?r=1"><img src="https://img.shields.io/badge/OS-Windows-0078D4?style=flat&logo=windows11" /></a>
+	<a href="https://www.gnu.org/software/bash/"><img src="https://img.shields.io/badge/LANG-Python-3776AB?style=flat&logo=python" /></a>
+        <a href="https://www.gnu.org/software/bash/"><img src="https://img.shields.io/badge/Architecture-x64/x86-0091BD?style=flat&logo=arm" /></a>
+<a href="https://www.gnu.org/software/bash/"><img src="https://img.shields.io/badge/Module-TensorFlow-FF6F00?style=flat&logo=tensorflow" /></a>
  </div>
 <div align="center">
 
